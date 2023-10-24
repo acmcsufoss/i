@@ -1,0 +1,26 @@
+name: Meeting
+description: A meeting issue template for Open Source Software team meetings.
+labels: 'meeting'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ![banner](https://raw.githubusercontent.com/EthanThatOneKid/acmcsuf.com/main/static/assets/about-illustration.svg)
+        <small>note: banner not included in your issue.</small>
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: |
+        Can you please explain what happened, what you saw, what you expected to see, and any other relevant information? Please drag and drop any screenshots here.
+      placeholder: Type away! Feel free to drag-and-drop any screenshots here.
+    validations:
+      required: false
+
+# TODO: Finish meeting.yaml template file.
+
+# Reference:
+# - - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms#converting-a-markdown-issue-template-to-a-yaml-issue-form-template
+# - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema#keys
+# - https://github.com/users/EthanThatOneKid/projects/6/views/8
+# - https://github.com/EthanThatOneKid/acmcsuf.com/blob/main/.github/ISSUE_TEMPLATE/bug_report.yaml?plain=1
+# - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
