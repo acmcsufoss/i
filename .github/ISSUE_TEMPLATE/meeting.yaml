@@ -1,26 +1,53 @@
 name: Meeting
-description: A meeting issue template for Open Source Software team meetings.
-labels: 'meeting'
+description: Create meeting notes 🚀
+title: "[Meeting] <title>"
+labels: ["meeting"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ![banner](https://raw.githubusercontent.com/EthanThatOneKid/acmcsuf.com/main/static/assets/about-illustration.svg)
-        <small>note: banner not included in your issue.</small>
-  - type: textarea
-    attributes:
-      label: What happened?
-      description: |
-        Can you please explain what happened, what you saw, what you expected to see, and any other relevant information? Please drag and drop any screenshots here.
-      placeholder: Type away! Feel free to drag-and-drop any screenshots here.
-    validations:
-      required: false
-
-# TODO: Finish meeting.yaml template file.
-
-# Reference:
-# - - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms#converting-a-markdown-issue-template-to-a-yaml-issue-form-template
-# - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema#keys
-# - https://github.com/users/EthanThatOneKid/projects/6/views/8
-# - https://github.com/EthanThatOneKid/acmcsuf.com/blob/main/.github/ISSUE_TEMPLATE/bug_report.yaml?plain=1
-# - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+- type: markdown
+  attributes:
+    label: 🙋 Participants
+    description: Mention the participants who attended the meeting.
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    label: 📍 Meeting location
+    description: Where the meeting was held.
+  validations:
+    required: true
+- type: markwdown
+  attributes:
+    label: 🗓️ Meeting date and time
+    description: Date and time when the meeting started.
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    label: ⏳ Meeting duration estimate
+    description: Estimate how long the meeting will take.
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    label: 📋 Meeting agenda
+    description: Break down the meeting topics, talking points, and agenda items.
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    label: 🚀 Meeting updates
+    description: Summarize the exciting updates and discussions from the meeting.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    label: 📝 Meeting action items
+    description: List the action items assigned during the meeting.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    label: 🌟 Meeting wrap-up
+    description: Closing remarks, schedule the next meeting, and record the adjournment time.
+  validations:
+    required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: acmcsufoss
+    url: https://oss.acmcsuf.com/
+    about: Contribute to this organization's open source projects.
+  - name: acmcsuf.com
+    url: https://acmcsuf.com/
+    about: See what's good with ACM at CSUF.
