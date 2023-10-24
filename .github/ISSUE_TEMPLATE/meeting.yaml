@@ -1,0 +1,112 @@
+name: Meeting
+description: Create meeting notes 🚀
+title: "[Meeting] <title>"
+labels: ["meeting"]
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out these meeting notes! If you need real-time help, join us on [Discord](https://acmcsuf.com/d).
+      ![banner](https://raw.githubusercontent.com/EthanThatOneKid/acmcsuf.com/main/static/assets/about-illustration.svg)
+
+- id: participants
+  type: textarea
+  attributes:
+    label: 🙋 Participants
+    description: Mention the participants who attended the meeting.
+    placeholder: "@EthanThatOneKid, @karnikaavelumani, …"
+  validations:
+    required: true
+
+- id: meeting_location
+  type: textarea
+  attributes:
+    label: 📍 Meeting location
+    description: Where the meeting was held.
+    value: Open Source Software team VC
+    placeholder: Open Source Software team VC
+  validations:
+    required: true
+
+- id: meeting_date
+  type: input
+  attributes:
+    label: 🗓️ Meeting date and time
+    description: Date and time when the meeting started.
+    placeholder: Oct 31, 2023 3:30 PM
+  validations:
+    required: true
+
+- id: meeting_duration
+  type: input
+  attributes:
+    label: ⏱️ Meeting duration
+    description: Estimate how long the meeting will take.
+    value: 60 minutes
+    placeholder: 60 minutes
+  validations:
+    required: true
+
+- id: meeting_agenda
+  type: textarea
+  attributes:
+    label: 📋 Meeting agenda
+    description: List the topics that will be discussed during the meeting.
+    placeholder: |
+      - Welcome new and returning participants.
+      - …
+    value: |
+      - Welcome new and returning participants.
+  validations:
+    required: false
+
+- id: meeting_updates
+  type: textarea
+  attributes:
+    label: 🚀 Meeting updates
+    description: Sync up on the progress of tasks assigned in the last meeting.
+    placeholder: |
+      - Anything to celebrate?
+      - Need help unblocking anything?
+      - Questions?
+      - …
+  validations:
+    required: false
+
+- id: action_items
+  type: textarea
+  attributes:
+    label: 😸 Action items
+    description: List the tasks that need to be completed before the next meeting.
+    placeholder: |
+      - [ ] Set expectations for tasks.
+      - [ ] Assign tasks to participants.
+      - [ ] Set deadlines for tasks.
+      - [ ] Set reminders for tasks.
+      - [ ] Assign and review action items for each team member.
+      - [ ] Discuss upcoming tasks and deadlines.
+      - …
+    value: |
+      - [ ] Set expectations for tasks.
+      - [ ] Assign tasks to participants.
+      - [ ] Set deadlines for tasks.
+      - [ ] Set reminders for tasks.
+      - [ ] Assign and review action items for each team member.
+      - [ ] Discuss upcoming tasks and deadlines.
+  validations:
+    required: false
+
+- id: meeting_wrapup
+  type: textarea
+  attributes:
+    label: ✨ Meeting wrap-up
+    description: Summarize the meeting and thank the participants for attending. Share the meeting notes with the participants and stakeholders.
+    value: |
+      - Next meeting: TBD
+      - Adjournment time: TBD
+  validations:
+    required: false
+
+# Reference:
+# - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
