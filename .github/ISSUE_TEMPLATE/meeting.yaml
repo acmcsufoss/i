@@ -41,7 +41,7 @@ body:
 - id: meeting_duration
   type: input
   attributes:
-    label: ⏱️ Meeting duration
+    label: ⏱️ Estimated meeting duration
     description: Estimate how long the meeting will take.
     value: 60 minutes
     placeholder: 60 minutes
