@@ -8,7 +8,7 @@ body:
   attributes:
     value: |
       Thanks for taking the time to fill out these meeting notes! If you need real-time help, join us on [Discord](https://acmcsuf.com/d).
-      ![banner](https://github.com/ethanthatonekid/acmcsuf.com/raw/main/static/assets/svg/about-illustration.svg)
+      ![banner](https://github.com/ethanthatonekid/acmcsuf.com/raw/main/static/assets/about-illustration.svg)
 
 - id: participants
   type: textarea
